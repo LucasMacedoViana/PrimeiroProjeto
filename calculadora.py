@@ -6,6 +6,10 @@ while True:
     (**) Expotenciação
     (//)Divisão interia
     Digite uma operação: ''')
+    if operacao == "":
+        print("Digite uma operação valida")
+        break
+
     num01 = float(input("Digite o primeiro número: "))
     num02 = float(input("Digite o segundo número: "))
 
@@ -43,14 +47,9 @@ while True:
             inteira(num01, num02)
             break
 
-    parar = input("(s) sim \n(n) não \nDeseja fazer outra operação?: ")
+    parar = input("(s) sim \n(n) não \nDeseja fazer outra operação? ")
     if parar != 's':
-        print('Encerrando a calcculadora!')
+        print('Encerrando a calculadora!')
         break
     else:
         continue
-
-
-
-
-
