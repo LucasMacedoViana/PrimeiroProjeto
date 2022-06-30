@@ -6,30 +6,41 @@ while True:
     (**) Expotenciação
     (//)Divisão interia
     Digite uma operação: ''')
-    if operacao == "":
-        print("Digite uma operação valida")
-        break
+    if operacao not in ['-', '+', '*', '/', '**', '//']:
+        print("Digite uma operação invalida")
+        continue
 
     num01 = float(input("Digite o primeiro número: "))
     num02 = float(input("Digite o segundo número: "))
 
+
     def somar(num01, num02):
         print(f'{num01} + {num02} = {num01 + num02:.2f}')
+
+
     def subtrair(num01, num02):
         print(f'{num01} - {num02} = {num01 - num02:.2f}')
+
+
     def multiplicar(num01, num02):
         print(f'{num01} x {num02} = {num01 * num02:.2f}')
+
+
     def dividir(num01, num02):
         print(f'{num01} / {num02} = {num01 / num02:.2f}')
-    def expotenciacao (num01, num02):
+
+
+    def expotenciacao(num01, num02):
         print(f'{num01} ** {num02} = {num01 ** num02:.2f}')
+
+
     def inteira(num01, num02):
         print(f'{num01} // {num02} = {num01 // num02:.2f}')
 
 
     while True:
         if operacao == '+':
-            somar(num01,num02)
+            somar(num01, num02)
             break
         elif operacao == '-':
             subtrair(num01, num02)
